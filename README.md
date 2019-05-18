@@ -30,3 +30,13 @@ All colliders share properties like physics material 2D which define bounciness 
 The collider can be adjusted so it's bounadary matches with the object itself using SHift key in the scene. This can also be used to create new edges and vertices in polygon and edge collider. To delete a vertex in such collider click on it while holding the ctrl key
 
 Add colliders only and no rigid bodies to static objects
+## Hinge joint 2D 
+Such joint allow a 2D object to rotate about an axis while being fixed at a point. The point about which it rotates is defined by the Connected body Rigid body field which can be a fixed point in space or a game object with a rigid body.
+
+Other properties include anchor and connected anchor points. 
+* Anchor is the point around which the sprite rotates around
+* Connected anchor defines where in the scen this point is placed and is relative to the connected item
+
+Collide connected sets whether the object will collide with the connected body.
+
+We can add motors to add velocity and rotation to the joint and apply limits to the min/max angle to which it can be rotated.
