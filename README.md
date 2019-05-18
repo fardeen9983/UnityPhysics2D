@@ -13,3 +13,20 @@ To interact physically all participating game objects need to have a rigid body 
 The fixed angle features allow physics interaction but not with angular rotation. Physics operation can be smoothed out through interpolation. It has a sleeping mode for none, awake and asleep. It will wake up and interact on collisions or before them.
 
 Collision detection : dicrete is used mostly and concrete for fast moving objects.
+
+## Collider 2D
+To have a physical presence and have it's shape and presence defined objects need to have collider 2D component attached to them.
+
+Different types of colliders
+1. Circular
+2. Box
+3. Edge
+4. Polygon
+
+Polygon and edge colliders are pretty similar as they are formed by connecting edges but they differ in the fact that polygon collider represents closed shapes while the later, open edge connections.
+
+All colliders share properties like physics material 2D which define bounciness and fricitions of collision and is trigger defines if colider will participate in collision  or let objects pass through. 
+
+The collider can be adjusted so it's bounadary matches with the object itself using SHift key in the scene. This can also be used to create new edges and vertices in polygon and edge collider. To delete a vertex in such collider click on it while holding the ctrl key
+
+Add colliders only and no rigid bodies to static objects
